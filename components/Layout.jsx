@@ -29,6 +29,7 @@ export default function Layout({ children }) {
             <link rel="icon" href="/logo.png" />
 
             <link rel="preload" as="image" href="/images/lawyer_banner.jpg" />
+            <link rel="preload" as="image" href="/images/DSC_0145.jpg" />
         </Head>
         <Script src="https://kit.fontawesome.com/199e38d7de.js" crossOrigin="anonymous" />
         <main className={font.className}>{children}</main>
