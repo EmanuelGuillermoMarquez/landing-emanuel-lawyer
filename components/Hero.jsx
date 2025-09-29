@@ -1,21 +1,12 @@
 import styles from "../styles/Hero.module.css";
 import { Lora , Merriweather , Noto_Serif } from 'next/font/google';
-import Image from 'next/image';
-import lawyerImage from '../public/images/lawyer_banner.jpg';
 
 const font = Lora({ subsets: ['latin'], weight: '400' });
-const imageStyle = {
-  objectFit: 'cover',
-  opacity: 0.8,
-  height: '100%',
-  zIndex: 0,
-};
 
 export default function Hero() {
   return (
     <section className={styles.hero }>
       <img src="images/lawyer_banner.jpg" alt="Emanuel Marquez Abogado" className={styles.image}/>
-      {/* <Image src={lawyerImage} alt="Emanuel Marquez Abogado" fill={true} style={imageStyle} priority={true}/> */}
 
       <h1 className={styles.title}>
         Emanuel Guillermo Marquez | Abogado
