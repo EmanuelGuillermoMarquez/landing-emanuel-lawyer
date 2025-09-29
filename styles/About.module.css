@@ -1,0 +1,114 @@
+.about {
+  padding: 4rem 0 4rem 2rem;
+  background: #051d40;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  min-height: 100dvh;
+}
+
+.text_container {
+  z-index: 1;
+  max-width: 70dvw;
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
+
+.text_container p {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.image_container {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  text-align: right;
+}
+
+.image {
+  height: 70dvh;
+  width: 70%;
+  object-fit: cover;
+  filter: grayscale(1) opacity(0.8);
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+   
+  /* -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,1) 25%,
+    rgba(0,0,0,1) 75%,
+    rgba(0,0,0,0) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,1) 25%,
+    rgba(0,0,0,1) 75%,
+    rgba(0,0,0,0) 100%
+  );
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat; */
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #00695c;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  z-index: 1;
+  text-align: center;
+}
+
+.button:hover {
+  background: #004d40;
+}
+
+.whatsapp {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #25d366;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  z-index: 1;
+  text-align: center;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
+@media (max-width: 800px) {
+  .image {
+    width: 50%;
+    height: 80dvh;
+  }
+  .text_container {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .image {
+    height: 100dvh;
+  }
+  .actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
