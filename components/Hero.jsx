@@ -6,7 +6,7 @@ const font = Lora({ subsets: ['latin'], weight: '400' });
 export default function Hero() {
   return (
     <section className={styles.hero }>
-      <img src="public/images/lawyer_banner.jpg" alt="Emanuel Marquez Abogado" className={styles.image}/>
+      <img src="/lawyer_banner.jpg" alt="Emanuel Marquez Abogado" className={styles.image}/>
 
       <h1 className={styles.title}>
         Emanuel Guillermo Marquez | Abogado

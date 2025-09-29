@@ -22,14 +22,14 @@ export default function Layout({ children }) {
               content="Emanuel Marquez Abogado - Asesoría legal profesional en Santa Fe, Argentina"
             />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content="/images/logo.png" />
+            <meta property="og:image" content="/logo_square.png" />
             <meta property="og:url" content="https://tusitio.com" />
 
             {/* Favicon */}
             <link rel="icon" href="/logo.png" />
 
-            <link rel="preload" as="image" href="/images/lawyer_banner.jpg" />
-            <link rel="preload" as="image" href="/images/DSC_0145.jpg" />
+            <link rel="preload" as="image" href="/lawyer_banner.jpg" />
+            <link rel="preload" as="image" href="/DSC_0145.jpg" />
         </Head>
         <Script src="https://kit.fontawesome.com/199e38d7de.js" crossOrigin="anonymous" />
         <main className={font.className}>{children}</main>
