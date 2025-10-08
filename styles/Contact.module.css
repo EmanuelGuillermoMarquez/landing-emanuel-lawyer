@@ -46,39 +46,9 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-.socials {
-  display: none;
-  flex-direction: row;
-  justify-content: center;
-  padding: 1rem;
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.socials i {
-  font-size: 1.5rem !important;
-  transition: 0.5s ease-in-out;
-  color: var(--primary-color);
-}
-
-.socials span {
-  margin-left: 1rem;
-  font-size: 1rem;
-  color: var(--primary-color);
-}
-
-.socials a:hover i {
-  color: #0072af;
-  transform: scale(1.2);
-}
-
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
     gap: 2rem;
-  }
-  .socials {
-    display: flex;
   }
 }

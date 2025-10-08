@@ -8,28 +8,22 @@ export default function Layout({ children }) {
     <>
         <Head>
             <title>{"Emanuel Marquez Abogado"}</title>
-            <meta
-                name="description"
-                content="Emanuel Marquez Abogado - Asesoría legal profesional en Santa Fe, Argentina"
-            />
+            <meta name="description" content="Emanuel Marquez Abogado - Asesoramiento legal especializado en accidentes de transitos, derechos reales y defensas penales. Santa Fe, Argentina" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta charSet="utf-8" />
 
             {/* Metadata para SEO y redes sociales */}
             <meta property="og:title" content="Emanuel Marquez Abogado" />
-            <meta
-              property="og:description"
-              content="Emanuel Marquez Abogado - Asesoría legal profesional en Santa Fe, Argentina"
-            />
+            <meta property="og:description" content="Emanuel Marquez Abogado - Asesoramiento legal especializado en accidentes de transitos, derechos reales y defensas penales. Santa Fe, Argentina" />
             <meta property="og:type" content="website" />
             <meta property="og:image" content="/logo_square.png" />
-            <meta property="og:url" content="https://tusitio.com" />
 
             {/* Favicon */}
             <link rel="icon" href="/logo.png" />
 
-            <link rel="preload" as="image" href="/lawyer_banner.jpg" />
-            <link rel="preload" as="image" href="/DSC_0145.jpg" />
+            {/* Preload IMG */}
+            {/* <link rel="preload" as="image" href="/lawyer_banner.jpg" />
+            <link rel="preload" as="image" href="/DSC_0145.jpg" /> */}
         </Head>
         <Script src="https://kit.fontawesome.com/199e38d7de.js" crossOrigin="anonymous" />
         <main className={font.className}>{children}</main>

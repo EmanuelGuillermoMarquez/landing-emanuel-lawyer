@@ -58,14 +58,15 @@
 
 .actions {
   display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-top: 3rem;
 }
 
 .button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background: #00695c;
+  background: #222;
   color: white;
   border-radius: 8px;
   text-decoration: none;
@@ -81,7 +82,7 @@
 .whatsapp {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background: #25d366;
+  background: #222;
   color: white;
   border-radius: 8px;
   text-decoration: none;
