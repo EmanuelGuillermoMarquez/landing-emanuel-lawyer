@@ -15,7 +15,7 @@ export default function Services() {
     <section className={styles.container}>
       <div className={styles.header}>
         <div>
-          <img src="/images/DSC_0163.jpg" alt="Emanuel Marquez Abogado" className={styles.image}/>
+          <img src="/images/DSC_0163.JPG" alt="Emanuel Marquez Abogado" className={styles.image}/>
         </div>
         <div>
           <h2>Ofrecemos <strong>soluciones legales efectivas</strong></h2>

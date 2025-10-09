@@ -22,9 +22,9 @@ export default function Layout({ children }) {
             <link rel="icon" href="/logo.png" />
 
             {/* Preload IMG */}
-            <link rel="preload" as="image" href="/lawyer_banner.jpg" />
-            <link rel="preload" as="image" href="/DSC_0145.jpg" />
-            <link rel="preload" as="image" href="/images/DSC_0163.jpg" />
+            <link rel="preload" as="image" href="/lawyer_banner.JPG" />
+            <link rel="preload" as="image" href="/DSC_0145.JPG" />
+            <link rel="preload" as="image" href="/images/DSC_0163.JPG" />
         </Head>
         <Script src="https://kit.fontawesome.com/199e38d7de.js" crossOrigin="anonymous" />
         <main className={font.className}>{children}</main>
