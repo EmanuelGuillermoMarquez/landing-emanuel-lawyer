@@ -4,16 +4,47 @@
   text-align: center;
 }
 
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-}
+} */
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 600px;
+  height: 150px;
+  padding: 20px 20px;
   background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 16px;
   font-style: italic;
-  color: #333;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.swiper {
+  padding-bottom: 2rem;
+}
+
+/* Puntos de paginación */
+.swiper-pagination-bullet {
+  background: #007b83 !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }

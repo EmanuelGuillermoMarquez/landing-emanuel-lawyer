@@ -2,13 +2,15 @@ import styles from "../styles/Services.module.css";
 
 export default function Services() {
   const services = [
-    { title: "Derecho de Daños", desc: "Reclamos por accidentes de transito, indemnización de daños y perjuicios en general." },
-    { title: "Derecho Civil", desc: "Asesoramiento especializado en materia de contratos, inmuebles, sucesiones." },
-    { title: "Derecho Real", desc: "Resolución de litigios en materia de inmuebles, desalojos, división de bienes, recuperación de bienes." },
-    { title: "Derecho Laboral", desc: "Indemnizaciones por despidos, accidentes laborales, reclamos por falta de registración y otros." },
-    { title: "Derecho de Familia", desc: "Divorcios, división de bienes conyugales, cuotas alimentarias y regimen de comunicación." },
-    { title: "Derecho Comercial", desc: "Asesoría integral para empresas y sociedades comerciales." },
-    { title: "Derecho Penal", desc: "Defensas y querellas penales con enfoque estratégico." },
+    { title: "Accidentes de transitos", desc: "Reclamos por accidentes de tránsito y laborales. Acompañamos todo el proceso para obtener una indemnización justa por los daños personales y materiales sufridos." },
+    { title: "Derecho de Daños", desc: "Defensa y reparación integral de los daños sufridos derivados de responsabilidad exctracontractual, incumplimientos contractuales, mala praxis profesional." },
+    { title: "Derecho Penal", desc: "Defensas penales estratégicas y querellas particulares, garantizando el debido proceso y la protección de los derechos y garantias de nuestros clientes." },
+    { title: "Derecho Civil", desc: "Asesoramiento y representación en juicios civiles y comerciales, especializados en materia de contratos, incumplimientos, cobro de deudas y defensa estratégica ante cualquier conflicto patrimonial." },
+    { title: "Derecho Comercial", desc: "Asesoría legal para empresas, emprendedores y sociedades. Resolución de conflictos comerciales, cobros y disputas contractuales." },
+    { title: "Derecho Laboral", desc: "Indemnizaciones por despidos, accidentes laborales, reclamos por falta de registración y diferencias salariales. Defendemos los derechos del trabajador con compromiso y resultados." },
+    { title: "Derecho Real", desc: "Resolución de litigios por propiedad y posesión de inmuebles. Juicios de desalojos y usucapión, división y recuperación de bienes con soluciones legales efectivas." },
+    { title: "Derecho Sucesorio", desc: "Tramitación de declaratorias de herederos y sucesiones. Representamos los derechos de nuestros clientes en conflictos entre herederos, garantizando una distribución justa del patrimonio." },
+    { title: "Derecho de Familia", desc: "Acompañamiento legal en divorcios, acuerdos patrimoniales y división de bienes, alimentos, tenencia y régimen de comunicación con hijos." },
   ];
 
   return (
