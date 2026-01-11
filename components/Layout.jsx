@@ -7,14 +7,14 @@ export default function Layout({ children }) {
   return (
     <>
         <Head>
-            <title>{"Emanuel Marquez Abogado"}</title>
-            <meta name="description" content="Emanuel Marquez Abogado - Asesoramiento legal especializado en accidentes de transito, derechos reales y defensas penales. Santa Fe, Argentina" />
+            <title>{"Emanuel Marquez | Abogado | Santa Fe, Argentina"}</title>
+            <meta name="description" content="Abogado especializado en accidentes de tránsito, derecho civil y defensas penales. Santa Fe, Argentina" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta charSet="utf-8" />
 
             {/* Metadata para SEO y redes sociales */}
-            <meta property="og:title" content="Emanuel Marquez Abogado" />
-            <meta property="og:description" content="Emanuel Marquez Abogado - Asesoramiento legal especializado en accidentes de transito, derechos reales y defensas penales. Santa Fe, Argentina" />
+            <meta property="og:title" content="Emanuel Marquez | Abogado | Santa Fe, Argentina" />
+            <meta property="og:description" content="Abogado especializado en accidentes de tránsito, derecho civil y defensas penales. Santa Fe, Argentina" />
             <meta property="og:type" content="website" />
             <meta property="og:image" content="/logo_square.png" />
 
