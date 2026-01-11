@@ -2,7 +2,7 @@ import styles from "../styles/Services.module.css";
 
 export default function Services() {
   const services = [
-    { title: "Accidentes de transitos", desc: "Reclamos por accidentes de tránsito y laborales. Acompañamos todo el proceso para obtener una indemnización justa por los daños personales y materiales sufridos." },
+    { title: "Accidentes de tránsito", desc: "Reclamos por accidentes de tránsito y laborales. Acompañamos todo el proceso para obtener una indemnización justa por los daños personales y materiales sufridos." },
     { title: "Derecho de Daños", desc: "Defensa y reparación integral de los daños sufridos derivados de responsabilidad exctracontractual, incumplimientos contractuales, mala praxis profesional." },
     { title: "Derecho Penal", desc: "Defensas penales estratégicas y querellas particulares, garantizando el debido proceso y la protección de los derechos y garantias de nuestros clientes." },
     { title: "Derecho Civil", desc: "Asesoramiento y representación en juicios civiles y comerciales, especializados en materia de contratos, incumplimientos, cobro de deudas y defensa estratégica ante cualquier conflicto patrimonial." },

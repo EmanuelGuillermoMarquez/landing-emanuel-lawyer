@@ -13,7 +13,7 @@ export default function Hero() {
       </h1>
       
       <p className={styles.subtitle}>
-        Asesoramiento legal especializado en accidentes de transitos, derechos reales y defensas penales. Santa Fe, Argentina. 
+        Asesoramiento legal especializado en accidentes de tránsito, derechos reales y defensas penales. Santa Fe, Argentina. 
       </p>
       <a
         /* href="https://web.whatsapp.com/send?phone=543424088190&text=Buenas.%20Necesito%20asesoramiento%20legal%20por%20favor." */
