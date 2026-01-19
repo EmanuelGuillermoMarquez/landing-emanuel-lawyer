@@ -27,7 +27,7 @@ export default function Layout({ children }) {
             <link rel="preload" as="image" href="/images/DSC_0163.JPG" />
 
             {/* Google Ads Global Site Tag (gtag.js) */}
-            <Script src={"https://www.googletagmanager.com/gtag/js?id=AW-17751695174"} strategy="afterInteractive" />
+            <Script src={"https://www.googletagmanager.com/gtag/js?id=AW-17751695174"} async />
             <Script>
               {`
                 window.dataLayer = window.dataLayer || [];
