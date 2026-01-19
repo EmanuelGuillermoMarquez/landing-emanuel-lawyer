@@ -25,6 +25,17 @@ export default function Layout({ children }) {
             <link rel="preload" as="image" href="/images/lawyer_banner.JPG" />
             <link rel="preload" as="image" href="/images/DSC_0145.JPG" />
             <link rel="preload" as="image" href="/images/DSC_0163.JPG" />
+
+            {/* Google Ads Global Site Tag (gtag.js) */}
+            <Script src={"https://www.googletagmanager.com/gtag/js?id=AW-17751695174"} strategy="afterInteractive" />
+            <Script>
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-17751695174');
+              `}
+            </Script>
         </Head>
         <Script src="https://kit.fontawesome.com/199e38d7de.js" crossOrigin="anonymous" />
         <main className={font.className}>{children}</main>
