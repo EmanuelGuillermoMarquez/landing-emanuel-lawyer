@@ -28,7 +28,7 @@ export default function Layout({ children }) {
 
             {/* Google Ads Global Site Tag (gtag.js) */}
             <Script src={"https://www.googletagmanager.com/gtag/js?id=AW-17751695174"} async />
-            <Script>
+            <Script src={"https://www.googletagmanager.com/gtag/js?id=AW-17751695174"} async>
               {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
