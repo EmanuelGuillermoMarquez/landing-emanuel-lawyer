@@ -17,6 +17,7 @@ export default function Layout({ children }) {
             <meta property="og:description" content="Abogado especialista en accidentes de tránsito, resolución de conflictos civiles y defensas penales. Santa Fe, Argentina" />
             <meta property="og:type" content="website" />
             <meta property="og:image" content="/logo_square.png" />
+            <meta name="google-site-verification" content="Gvc-Uizmo6b-KLPKEvVeNYf8ANQGTxLAG5xcmbMWMfY" />
 
             {/* Favicon */}
             <link rel="icon" href="/logo.png" />
