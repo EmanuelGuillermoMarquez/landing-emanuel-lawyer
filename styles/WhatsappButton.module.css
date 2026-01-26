@@ -1,12 +1,12 @@
 .whatsappButton {
     position: fixed;
-    bottom: 40vh;
-    right: -13rem;
+    bottom: 30vh;
+    right: -13.5rem;
     background-color: #00695c;
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 14px;
     cursor: pointer;
     z-index: 1000;
@@ -32,5 +32,13 @@
     .whatsappButton:hover {
         background-color: #21b055;
         right: -3rem;
+    }
+}
+@media (max-width: 768px) {
+    .whatsappButton {
+        bottom: 20vh;
+    }
+    .whatsappButton i {
+        font-size: 1.2rem;
     }
 }

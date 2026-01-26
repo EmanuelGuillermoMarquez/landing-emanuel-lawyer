@@ -9,9 +9,10 @@ export default function Topbar() {
     <section className={styles.topbar + " " + jost.className}>
         <div className={styles.socials}>
           <a
-            href="https://www.instagram.com/emanuelmarquezabogado/"
+            href="https://www.linkedin.com/in/emanuelmarquez/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visita mi perfil de LinkedIn"
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
@@ -19,6 +20,7 @@ export default function Topbar() {
             href="https://www.instagram.com/emanuelmarquezabogado/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visita mi perfil de Instagram"
           >
             <i className="fa-brands fa-instagram"></i>
           </a>
@@ -26,6 +28,7 @@ export default function Topbar() {
             href="https://wa.me/543424088190"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Contactame por WhatsApp"
           >
             <i className="fa-brands fa-whatsapp"></i>
           </a>

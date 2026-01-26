@@ -18,14 +18,50 @@ export default function Layout({ children }) {
             <meta property="og:type" content="website" />
             <meta property="og:image" content="/logo_square.png" />
             <meta name="google-site-verification" content="Gvc-Uizmo6b-KLPKEvVeNYf8ANQGTxLAG5xcmbMWMfY" />
+            
+            {/* Datos estructurados JSON-LD */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Attorney",
+                  "name": "Emanuel Guillermo Marquez",
+                  "image": "/images/lawyer_banner.webp",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "25 de Mayo 2126",
+                    "addressLocality": "Santa Fe",
+                    "addressRegion": "Santa Fe",
+                    "postalCode": "3000",
+                    "addressCountry": "AR"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -31.65122930590582,
+                    "longitude": -60.70648833719594
+                  },
+                  "url": "https://emanuelmarquezabogado.vercel.app/",
+                  "telephone": "+543424088190",
+                  "openingHoursSpecification": [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                      "opens": "08:00",
+                      "closes": "20:00"
+                    }
+                  ]
+                }),
+              }}
+            />
 
             {/* Favicon */}
             <link rel="icon" href="/logo.png" />
 
             {/* Preload IMG */}
-            <link rel="preload" as="image" href="/images/lawyer_banner.JPG" />
-            <link rel="preload" as="image" href="/images/DSC_0145.JPG" />
-            <link rel="preload" as="image" href="/images/DSC_0163.JPG" />
+            <link rel="preload" as="image" href="/images/lawyer_banner.webp" />
+            <link rel="preload" as="image" href="/images/DSC_0145.webp" />
+            <link rel="preload" as="image" href="/images/DSC_0163.webp" />
 
         </Head>
         {/* Google Ads Global Site Tag (gtag.js) */}

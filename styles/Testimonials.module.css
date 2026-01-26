@@ -48,3 +48,9 @@
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
+
+@media (max-width: 600px) {
+  .testimonials h2 {
+    font-size: 1.8rem;
+  }
+}

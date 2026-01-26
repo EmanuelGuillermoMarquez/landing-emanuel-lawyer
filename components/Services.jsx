@@ -2,8 +2,8 @@ import styles from "../styles/Services.module.css";
 
 export default function Services() {
   const services = [
-    { title: "Accidentes de tránsito", desc: "Reclamos por accidentes de tránsito y laborales. Acompañamos todo el proceso para obtener una indemnización justa por los daños personales y materiales sufridos." },
-    { title: "Derecho de Daños", desc: "Defensa y reparación integral de los daños sufridos derivados de responsabilidad exctracontractual, incumplimientos contractuales, mala praxis profesional." },
+    { title: "Accidentes de tránsito", desc: "Reclamos por accidentes de tránsito y laborales. Garantizamos la indemnización justa por los daños personales y materiales sufridos." },
+    { title: "Derecho de Daños", desc: "Reparación integral de los daños sufridos derivados de responsabilidad exctracontractual, incumplimientos contractuales, mala praxis profesional." },
     { title: "Derecho Penal", desc: "Defensas penales estratégicas y querellas particulares, garantizando el debido proceso y la protección de los derechos y garantias de nuestros clientes." },
     { title: "Derecho Civil", desc: "Asesoramiento y representación en juicios civiles y comerciales, especializados en materia de contratos, incumplimientos, cobro de deudas y defensa estratégica ante cualquier conflicto patrimonial." },
     { title: "Derecho Comercial", desc: "Asesoría legal para empresas, emprendedores y sociedades. Resolución de conflictos comerciales, cobros y disputas contractuales." },
@@ -17,7 +17,7 @@ export default function Services() {
     <section className={styles.container}>
       <div className={styles.header}>
         <div>
-          <img src="/images/DSC_0163.JPG" alt="Emanuel Marquez Abogado" className={styles.image}/>
+          <img src="/images/DSC_0163.webp" alt="Emanuel Marquez Abogado en su despacho de Santa Fe" className={styles.image}/>
         </div>
         <div>
           <h2>Ofrecemos <strong>soluciones legales efectivas</strong></h2>
@@ -29,7 +29,7 @@ export default function Services() {
         </div>
       </div>
       <div className={styles.services}>
-        <h2>Nos especializamos en estas areas del derecho</h2>
+        <h2>Servicios legales en <strong> Santa Fe</strong></h2>
         <div className={styles.grid}>
           {services.map((s, i) => (
             <div key={i} className={styles.card}>

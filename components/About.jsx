@@ -23,7 +23,7 @@ export default function About() {
         </div>
       </div>
       <div className={styles.image_container}>
-        <img src="/images/DSC_0145.JPG" alt="Emanuel Marquez Profile" className={styles.image}/>
+        <img src="/images/DSC_0145.webp" alt="Descripción de Emanuel Marquez Abogado" className={styles.image}/>
       </div>
     </section>
   );
