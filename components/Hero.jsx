@@ -5,7 +5,7 @@ const font = Lora({ subsets: ['latin'], weight: '400' });
 
 export default function Hero() {
   return (
-    <section className={styles.hero }>
+    <section id="legal" className={styles.hero }>
       <img src="/images/lawyer_banner.webp" alt="Emanuel Marquez Abogado portada principal" className={styles.image}/>
 
       <h1 className={styles.title}>

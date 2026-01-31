@@ -1,18 +1,83 @@
+'use client';
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import styles from "../styles/Contact.module.css";
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleChange = (e) => {
+    setError(false);
+    setSuccess(false);
+    setLoading(false);
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(false);
+    setSuccess(false);
+
+    if (!form.name || !form.email || !form.message) {
+      setError("Por favor complete los campos obligatorios.");
+      setLoading(false);
+      return;
+    }
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          message: form.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      );
+
+      setSuccess(true);
+      setForm({ name: "", email: "", phone: "", message: "" });
+    } catch (err) {
+      console.error(err);
+      setError("Ocurrió un error al enviar la consulta.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
   return (
     <section id="contacto" className={styles.contact}>
       <h2>Contacto</h2>
       <div className={styles.container}>
         <div>
           <form className={styles.form}>
-            <input type="text" placeholder="Nombre" required />
-            <input type="email" placeholder="Email" required />
-            <input type="text" placeholder="Celular" required />
-            <input type="text" placeholder="Asunto" required />
-            <input type="text" placeholder="Mensaje" required />
-            <button type="submit">Enviar solicitud</button>
+            <input type="text" name="name" value={form.name} placeholder="Nombre y apellido" required onChange={handleChange} />
+            <input type="email" name="email" value={form.email} placeholder="Email" required onChange={handleChange} />
+            <input type="text" name="phone" value={form.phone} placeholder="Celular" required onChange={handleChange} />
+            <input type="text" name="message" value={form.message} placeholder="Consulta" required onChange={handleChange} />
+
+            <div className={styles.status}>
+              {error && <p className={styles.error}>{error}</p>}
+              {success && (<p className={styles.success}> Consulta enviada, nos comunicaremos a la brevedad.</p>)}
+            </div>
+            
+            <button onClick={handleSubmit} type="submit" disabled={loading}>{loading ? "Enviando..." : "Enviar consulta"}</button>
           </form>
           <a
             href="https://wa.me/543424088190"

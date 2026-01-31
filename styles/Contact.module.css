@@ -22,6 +22,16 @@
   gap: 1rem;
 }
 
+.status {
+  height: 2rem;
+}
+.error {
+  font-size: 0.8rem;
+}
+.success {
+  font-size: 0.8rem;
+}
+
 .whatsapp {
   display: inline-block;
   width: 100%;
