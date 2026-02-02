@@ -11,10 +11,12 @@ export default function Layout({ children }) {
             <meta name="description" content="Abogado especialista en accidentes de tránsito, resolución de conflictos civiles y defensas penales. Santa Fe, Argentina" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta charSet="utf-8" />
+            <link rel="canonical" href="https://emanuelmarquezabogado.com/" />
 
             {/* Metadata para SEO y redes sociales */}
             <meta property="og:title" content="Emanuel Marquez | Abogado | Santa Fe, Argentina" />
             <meta property="og:description" content="Abogado especialista en accidentes de tránsito, resolución de conflictos civiles y defensas penales. Santa Fe, Argentina" />
+            <meta property="og:url" content="https://emanuelmarquezabogado.com/" />
             <meta property="og:type" content="website" />
             <meta property="og:image" content="/logo_square.png" />
             <meta name="google-site-verification" content="Gvc-Uizmo6b-KLPKEvVeNYf8ANQGTxLAG5xcmbMWMfY" />
@@ -41,7 +43,7 @@ export default function Layout({ children }) {
                     "latitude": -31.65122930590582,
                     "longitude": -60.70648833719594
                   },
-                  "url": "https://emanuelmarquezabogado.vercel.app/",
+                  "url": "https://emanuelmarquezabogado.com/",
                   "telephone": "+543424088190",
                   "openingHoursSpecification": [
                     {
