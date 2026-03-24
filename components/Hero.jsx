@@ -1,5 +1,7 @@
+import GoogleConversionTracker from '../helpers/GoogleConversionTracker';
 import styles from "../styles/Hero.module.css";
 import { Lora , Merriweather , Noto_Serif } from 'next/font/google';
+
 
 const font = Lora({ subsets: ['latin'], weight: '400' });
 
@@ -20,6 +22,7 @@ export default function Hero() {
         Especialista en accidentes, derecho civil y defensas penales. Santa Fe, Argentina. 
       </h2>
       <div className={styles.actions}>
+        <GoogleConversionTracker />
         <a
           href="https://wa.me/543424088190"
           target="_blank"
